@@ -11,13 +11,13 @@
 
 .signature-menu {
     background-image: url('img/joppe-spaa-TsYzva0e2pQ-unsplash.jpg');
-    height: 550px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
+    background-repeat: no-repeat;
     color: white;
-    padding: 100px 0;
+    padding: 50px 0;
     position: relative;
-    
+    height: 550px; /* Fixed height for larger screens */
 }
 .signature-menu::before {
     content: '';
@@ -41,17 +41,57 @@
     font-family: "Oswald", sans-serif;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 p {
     font-size: 1rem;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .footer {
     background-color: #f8f9fa;
     padding: 20px 0;
 }
+
+.list-unstyled li a{
+    text-decoration: none;
+}
+
+#carouselExampleIndicators {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.carousel-item img {
+    height: 550px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .signature-menu {
+        background-size: 100% 300px; /* Adjust width and height for mobile */
+        height: 300px; /* Fixed height for mobile */
+        padding: 20px 0;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    #carouselExampleIndicators {
+        width: 100%;
+    }
+    .carousel-item img {
+        height: 275px; /* 50% of original height */
+    }
+  
+}
+
+
 
