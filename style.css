@@ -4,9 +4,15 @@
     font-family: "Oswald", sans-serif;
 }
 
+
 .team-member-img {
     height: 250px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .team-member-img {
+    transform: scale(0.9); /* Zoom in to 110% */
 }
 
 .signature-menu {
@@ -54,6 +60,11 @@ p {
     background-color: #f8f9fa;
     padding: 20px 0;
 }
+.footer-img{
+    width: 75%;
+    height: 80px;
+    
+}
 
 .list-unstyled li a{
     text-decoration: none;
@@ -80,6 +91,12 @@ p {
     p {
         font-size: 0.9rem;
     }
+
+    .footer-img{
+        width: 40%;
+        height: 60px;
+    }
+
 }
 
 
@@ -88,7 +105,7 @@ p {
         width: 100%;
     }
     .carousel-item img {
-        height: 275px; /* 50% of original height */
+        height: 220px; /* 50% of original height */
     }
   
 }
