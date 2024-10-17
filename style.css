@@ -79,6 +79,52 @@ p {
     object-fit: cover;
 }
 
+.image-container {
+    position: relative;
+  }
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    
+  }
+  .centered-text p {
+    font-size: 20px;
+  }
+  .image-container img {
+    width: 100%;
+    height: 550px;
+  }
+
+  .form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.form-header {
+    background-color: #007bff;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.message-butt {
+    font-size: 25px;
+    border: 0px solid;
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: 5px;
+}
+
+.message-butt:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+
+
 @media (max-width: 768px) {
     .signature-menu {
         background-size: 100% 300px; /* Adjust width and height for mobile */
@@ -97,6 +143,15 @@ p {
         height: 60px;
     }
 
+    .image-container img {
+        height: 220px;
+    }
+
+    .centered-text p {
+        font-size: 12px;
+        text-align: center;
+    }
+
 }
 
 
@@ -107,7 +162,7 @@ p {
     .carousel-item img {
         height: 220px; /* 50% of original height */
     }
-  
+
 }
 
 
