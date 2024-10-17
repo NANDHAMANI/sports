@@ -112,6 +112,7 @@ p {
 }
 .message-butt {
     font-size: 25px;
+    padding: 0px 25px;
     border: 0px solid;
     background-color: #28a745;
     border-color: #28a745;
@@ -150,6 +151,11 @@ p {
     .centered-text p {
         font-size: 12px;
         text-align: center;
+    }
+
+    .message-butt {
+        font-size: 17px;
+        padding: 10px;
     }
 
 }
